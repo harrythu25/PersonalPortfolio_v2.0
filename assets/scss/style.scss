@@ -1,0 +1,206 @@
+// Developed by BootstrapDash (bootstrapdash.com).
+
+// Bootstrap function, vaiables and mixins
+@import "../vendors/bootstrap/scss/functions";
+@import "../vendors/bootstrap/scss/variables";
+@import "../vendors/bootstrap/scss/mixins";
+
+// Custom vaiables and fonts
+@import "./components/variables";
+@import "./components/font";
+
+// Bootstrap main file
+@import "../vendors/bootstrap/scss/bootstrap.scss";
+
+// Components
+@import "./components//loader";
+@import "./components/typography";
+@import "./components/buttons";
+@import "./components/header";
+@import "./components//landing";
+@import "./components/contact";
+@import "./components/footer";
+@import "./components/blog";
+@import "./components/utilities";
+
+.hiro-header-carousel .carousel-item-title::before {
+  content: "Hey!";
+  position: absolute;
+  color: rgba(5, 194, 195, 0.62);
+  z-index: 1;
+  font-size: 120px;
+  left: 0;
+  top: 0;
+}
+
+.hiro-header-carousel .carousel-item-title {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.21;
+  padding-top: 125px;
+  margin-bottom: 28px;
+  -webkit-animation-delay: 0.25s;
+  animation-delay: 0.25s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  position: relative;
+}
+/**
+.projects-section {
+     .project-column-normal .section-title::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 8px;  
+    margin-bottom: 40px; 
+    background-image: url(../images/Team_line.png);
+    background-size: auto 8px;
+    }
+    .project-column-indented 
+    {
+        h2{
+        }
+       .section-title::after{
+    content: "";
+    display: block;
+    width: 50%;
+    height: 8px;  
+    margin-bottom: 40px; 
+    background-image: url(../images/Team_line.png);
+    background-size: auto 8px;
+    }
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+ .projects-section .project-column-indented {
+    padding-top: 106px;
+}
+}
+
+**/
+@media only screen and (min-width: 992px) {
+  .hiro-header-carousel .carousel-item-title::before {
+    content: "Hey!";
+    position: absolute;
+    color: rgba(5, 194, 195, 0.62);
+    z-index: 1;
+    font-size: 180px;
+    left: 0;
+    top: 0;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .team-section {
+    .col-md-5 {
+      border-right: 1px solid #ccc;
+    }
+    .col-md-7 {
+      border-top: 0px solid #ccc !important;
+      padding-top: 0px !important;
+      padding-left: 50px;
+    }
+  }
+  .projects-section {
+    .section-title {
+      margin-bottom: 22px;
+    }
+  }
+  .individual_project {
+    .team-section {
+      .section-title {
+        margin-top: 0px;
+      }
+      .hiro-team-carousel {
+        .team-card::before {
+          display: none;
+        }
+        .team-card {
+          padding: 0px;
+        }
+      }
+      .carousel-control-prev {
+        margin: 35px 30px 35px 0px;
+        width: 5%;
+      }
+      .carousel-control-next {
+        margin: 20px 0px;
+        width: 5%;
+      }
+      .section-text-light {
+        max-width: 100%;
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+.individual_project {
+  .team-section {
+    .hiro-team-carousel {
+      .team-card::before {
+        display: none;
+      }
+    }
+  }
+}
+.team-section {
+  .carousel-control-prev {
+    margin: 35px 30px 35px 0px;
+  }
+  .carousel-control-next {
+    margin: 20px 0px;
+  }
+  .col-md-5 {
+    .section-text-light {
+      margin-bottom: 0px;
+    }
+  }
+  .col-md-7 {
+    padding-top: 35px;
+    border-top: 1px solid #ccc;
+    .carousel-item {
+      padding: 0px;
+      .carousel-subtitle::after {
+        content: "";
+        display: block;
+        width: 25%;
+        height: 8px;
+        background-image: url(../images/Team_line@1x.svg);
+        background-size: auto 8px;
+      }
+      color: white;
+    }
+  }
+}
+
+.hiro-header-carousel .carousel-item-link {
+  font-size: 25px;
+}
+.projects-section {
+  a:hover {
+    text-decoration: none;
+  }
+}
+.dark-footer,
+.dark-footer nav a {
+  color: white !important;
+  background-color: #050605;
+  border: 0;
+}
+.individual_project {
+  background-color: #050605;
+  .hiro-header-carousel {
+    padding: 10px 0px 0px 0px;
+  }
+  .hiro-header-carousel .carousel-item-social-links a {
+    font-size: 16px;
+    font-weight: 700;
+    color: white;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .carousel-item {
+    padding: 0px;
+  }
+}

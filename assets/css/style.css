@@ -12104,4 +12104,10 @@ html {
   display: inline-block;
   color: black;
 }
+
+.hiro-footer {
+  padding-top: 33px;
+  padding-bottom: 42px;
+  border-top: 0px;
+}
 /*# sourceMappingURL=style.css.map */
